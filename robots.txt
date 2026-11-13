@@ -1,0 +1,32 @@
+# robots.txt propuesto para producción (tvsperu.com).
+# Mientras la propuesta está en revisión, cada página lleva <meta name="robots" content="noindex">.
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /prueba/
+Disallow: /prueba-2/
+Disallow: /pagina-ejemplo/
+Disallow: /talleres-autorizados-bk/
+
+# Buscadores con IA y asistentes: permitidos para que puedan citar las fichas, el catálogo y la red de puntos.
+# Decisión de negocio: bloquear los agentes de entrenamiento (GPTBot, Google-Extended, Applebot-Extended)
+# no cambia la búsqueda tradicional, pero sí reduce la presencia de la marca en las respuestas de IA.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+Allow: /
+Disallow: /wp-admin/
+Disallow: /prueba/
+Disallow: /prueba-2/
+Disallow: /pagina-ejemplo/
+Disallow: /talleres-autorizados-bk/
+
+Sitemap: https://tvsperu.com/sitemap.xml
